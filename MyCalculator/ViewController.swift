@@ -10,16 +10,47 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var lblDisplay: UILabel!
+    var isUserTyping: Bool = false
+    var model: calculatorModel = calculatorModel()
+    
+    var displayValue: Double {
+        get{
+            return Double(lblDisplay.text!)!
+        }
+        set{
+            lblDisplay.text = String(newValue)
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func digitTouched(_ sender: UIButton) {
+        
+        let digit = sender.currentTitle!
+        if isUserTyping {
+            lblDisplay.text =  lblDisplay.text! + digit
+            
+        }else{
+            lblDisplay.text = digit
+        }
+        isUserTyping = true
     }
+ 
 
-
+    
+    
+    @IBAction func performoperation(_ sender: UIButton) {
+        print("clicked")
+        
+        if isUserTyping {
+            model.getOperands(operand: displayValue)
+            isUserTyping = false
+        }
+        if let mathSymbol = sender.currentTitle {
+            model.performOperation(symbol: mathSymbol)
+            
+        }
+        displayValue = model.result
+    }
 }
+
 

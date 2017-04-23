@@ -14,6 +14,7 @@
 		180B97271EAC7758004F7D31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180B97251EAC7758004F7D31 /* LaunchScreen.storyboard */; };
 		180B97321EAC7758004F7D31 /* MyCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B97311EAC7758004F7D31 /* MyCalculatorTests.swift */; };
 		180B973D1EAC7758004F7D31 /* MyCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B973C1EAC7758004F7D31 /* MyCalculatorUITests.swift */; };
+		180B974B1EAC7ABB004F7D31 /* calculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B974A1EAC7ABB004F7D31 /* calculatorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		180B97381EAC7758004F7D31 /* MyCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		180B973C1EAC7758004F7D31 /* MyCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalculatorUITests.swift; sourceTree = "<group>"; };
 		180B973E1EAC7758004F7D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180B974A1EAC7ABB004F7D31 /* calculatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calculatorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				180B97231EAC7758004F7D31 /* Assets.xcassets */,
 				180B97251EAC7758004F7D31 /* LaunchScreen.storyboard */,
 				180B97281EAC7758004F7D31 /* Info.plist */,
+				180B974A1EAC7ABB004F7D31 /* calculatorModel.swift */,
 			);
 			path = MyCalculator;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180B974B1EAC7ABB004F7D31 /* calculatorModel.swift in Sources */,
 				180B971F1EAC7758004F7D31 /* ViewController.swift in Sources */,
 				180B971D1EAC7758004F7D31 /* AppDelegate.swift in Sources */,
 			);
